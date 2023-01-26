@@ -34,11 +34,65 @@ body {
   min-height: 100vh;
   border: 1px solid pink;
   font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0deg, 0%, 95%);
+  margin: 2rem 0;
 }
 
 .container {
-  border: 1px solid blue;
+  width: 18rem;
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  padding: 2rem;
 }
 .container article img {
-  width: 50px;
+  width: 60px;
+}
+.container article h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 95%);
+}
+.container article p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.container article button {
+  border: none;
+  display: inline-block;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 0.8rem 1rem;
+  border-radius: 100px;
+  width: 60%;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container article:nth-child(1) {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.container article:nth-child(1) button {
+  color: hsl(31deg, 77%, 52%);
+}
+.container article:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.container article:nth-child(2) button {
+  color: hsl(184deg, 100%, 22%);
+}
+.container article:nth-child(3) {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.container article:nth-child(3) button {
+  color: hsl(179deg, 100%, 13%);
 }/*# sourceMappingURL=style.css.map */

@@ -7,14 +7,75 @@ body {
   min-height: 100vh;
   border: 1px solid pink;
   font-family: $ff-lexend;
+  background-color: $clr-bg-hs-btn;
+  margin: 2rem 0;
 }
 
 .container {
-  border: 1px solid blue;
+  width: 18rem;
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
 
   article {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5rem;
+    padding: 2rem;
+
     img {
-      width: 50px;
+      width: 60px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-family: $ff-big;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $clr-bg-hs-btn;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: $clr-paragraphs;
+    }
+
+    button {
+      border: none;
+      display: inline-block;
+      background-color: $clr-bg-hs-btn;
+      padding: 0.8rem 1rem;
+      border-radius: 100px;
+      width: 60%;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    &:nth-child(1) {
+      background-color: $clr-bright-orange;
+
+      button {
+        color: $clr-bright-orange;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: $clr-dark-cyan;
+
+      button {
+        color: $clr-dark-cyan;
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: $clr-very-dark-cyan;
+      button {
+        color: $clr-very-dark-cyan;
+      }
     }
   }
 }
