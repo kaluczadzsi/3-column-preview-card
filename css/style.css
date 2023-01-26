@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  border: 1px solid pink;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  border: 1px solid blue;
+}
+.container article img {
+  width: 50px;
+}/*# sourceMappingURL=style.css.map */

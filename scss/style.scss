@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'reset';
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  border: 1px solid pink;
+  font-family: $ff-lexend;
+}
+
+.container {
+  border: 1px solid blue;
+
+  article {
+    img {
+      width: 50px;
+    }
+  }
+}
