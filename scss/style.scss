@@ -5,14 +5,13 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  border: 1px solid pink;
   font-family: $ff-lexend;
   background-color: $clr-bg-hs-btn;
   margin: 2rem 0;
 }
 
 .container {
-  width: 18rem;
+  max-width: 18rem;
   border-radius: 8px;
   overflow: hidden;
   display: grid;
@@ -89,6 +88,33 @@ body {
         &:hover {
           color: #fff;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 50rem) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 51rem;
+
+    article {
+      &:nth-child(1) {
+        border-radius: 8px 0 0 8px;
+      }
+
+      &:nth-child(3) {
+        border-radius: 0 8px 8px 0;
+      }
+
+      p {
+        margin-bottom: 3rem;
+        font-size: 0.85rem;
       }
     }
   }
