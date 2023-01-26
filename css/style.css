@@ -58,7 +58,6 @@ body {
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
   font-size: 2rem;
-  font-weight: 700;
   color: hsl(0deg, 0%, 95%);
 }
 .container article p {
