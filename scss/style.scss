@@ -53,6 +53,11 @@ body {
       font-size: 0.8rem;
       cursor: pointer;
       transition: 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 0 2px #fff inset;
+        background-color: inherit;
+      }
     }
 
     &:nth-child(1) {
@@ -60,6 +65,9 @@ body {
 
       button {
         color: $clr-bright-orange;
+        &:hover {
+          color: #fff;
+        }
       }
     }
 
@@ -68,6 +76,9 @@ body {
 
       button {
         color: $clr-dark-cyan;
+        &:hover {
+          color: #fff;
+        }
       }
     }
 
@@ -75,6 +86,9 @@ body {
       background-color: $clr-very-dark-cyan;
       button {
         color: $clr-very-dark-cyan;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }

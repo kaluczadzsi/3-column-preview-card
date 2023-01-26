@@ -78,11 +78,18 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+.container article button:hover {
+  box-shadow: 0 0 0 2px #fff inset;
+  background-color: inherit;
+}
 .container article:nth-child(1) {
   background-color: hsl(31deg, 77%, 52%);
 }
 .container article:nth-child(1) button {
   color: hsl(31deg, 77%, 52%);
+}
+.container article:nth-child(1) button:hover {
+  color: #fff;
 }
 .container article:nth-child(2) {
   background-color: hsl(184deg, 100%, 22%);
@@ -90,9 +97,15 @@ body {
 .container article:nth-child(2) button {
   color: hsl(184deg, 100%, 22%);
 }
+.container article:nth-child(2) button:hover {
+  color: #fff;
+}
 .container article:nth-child(3) {
   background-color: hsl(179deg, 100%, 13%);
 }
 .container article:nth-child(3) button {
   color: hsl(179deg, 100%, 13%);
+}
+.container article:nth-child(3) button:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
